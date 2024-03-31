@@ -1,5 +1,8 @@
-これは何ですか？
-What is this?
+# SDWebUI-full-kit
+
+
+## これは何ですか？ What is this?
+
 
 自分のＰＣ上で画像生成AIを実行できるstableDiffusionWebUI forge版を説明付きのアプリで解説を見ながらインストールできるアプリケーションです。
 
@@ -9,7 +12,6 @@ This is an application that allows you to install the stableDiffusionWebUI forge
 
 It includes the installation of selected generative models (checkpoints), image control models called controlnet (controlnet checkpoints), and various extensions that are widely recommended for beginners and advanced users alike.
 
-使い方
-
-How to use
+## 使い方 How to use
+まずはダウンロードを行います。First, download the software.
 
