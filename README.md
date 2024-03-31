@@ -3,6 +3,7 @@
 
 ## これは何ですか？ What is this?
 
+![スクリーンショット](./screenshot.png)
 
 自分のＰＣ上で画像生成AIを実行できるstableDiffusionWebUI forge版を説明付きのアプリで解説を見ながらインストールできるアプリケーションです。
 
@@ -13,5 +14,24 @@ This is an application that allows you to install the stableDiffusionWebUI forge
 It includes the installation of selected generative models (checkpoints), image control models called controlnet (controlnet checkpoints), and various extensions that are widely recommended for beginners and advanced users alike.
 
 ## 使い方 How to use
-まずはダウンロードを行います。First, download the software.
+まずはダウンロードを行います。すでにgitがインストールされている人はgit cloneでダウンロードできます。それ以外の人は画像の手順でZIPファイルをダウンロードし、解凍してください。
 
+The first step is to download the file. If you already have git installed, you can download it by git clone. For others, download the ZIP file and unzip it according to the procedure shown in the image.
+
+![ダウンロード](download.png)
+
+git cloneまたは解凍するとこのようなフォルダー構成になっています。「01_python_and_git_installer.bat」を起動するとWebUIを実行するのに必要なアプリがダウンロードとインストールされます。(pythonとgit)
+
+When you git clone or unzip the file, you will see a folder structure like this. Run "01_python_and_git_installer.bat" to download and install the apps necessary to run WebUI. (python and git)
+
+途中、gitでインストールを許可するか聞かれますので「はい」とお答えください。そのあとは勝手にインストールが続行されコマンドプロンプト(黒い画面)は終了します。
+
+On the way, you will be asked if you want to allow installation with git. After that, the installation will continue on its own and the command prompt (black screen) will close.
+
+![インストールの実行](install.png)
+
+アプリは「02_webui_installer.bat」を起動することで実行されます。
+おすすめの画像生成AIモデルや拡張機能を画像付きの説明を見ながらダウンロードできます。
+
+The apps are executed by launching "02_webui_installer.bat".
+You can download recommended image-generating AI models and extensions with explanations with images.
