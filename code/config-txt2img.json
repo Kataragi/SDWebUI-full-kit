@@ -1,0 +1,55 @@
+{
+    "None": {},
+    "Controlnet CannyXL": {
+        "txt2img_controlnet_ControlNet-0_controlnet_enable_checkbox": true,
+        "txt2img_controlnet_ControlNet-0_controlnet_pixel_perfect_checkbox": true,
+        "txt2img_controlnet_ControlNet-0_controlnet_preprocessor_preview_checkbox": true,
+        "txt2img_controlnet_ControlNet-0_controlnet_type_filter_radio": "Canny",
+        "txt2img_controlnet_ControlNet-0_controlnet_preprocessor_dropdown": "canny",
+        "txt2img_controlnet_ControlNet-0_controlnet_model_dropdown": "diffusers_xl_canny_full [2b69fca4]",
+        "txt2img_controlnet_ControlNet-0_controlnet_control_weight_slider": 0.6,
+        "txt2img_controlnet_ControlNet-0_controlnet_start_control_step_slider": 0,
+        "txt2img_controlnet_ControlNet-0_controlnet_ending_control_step_slider": 0.35,
+        "txt2img_controlnet_ControlNet-0_controlnet_control_mode_radio": "Balanced",
+        "txt2img_controlnet_ControlNet-0_controlnet_resize_mode_radio": "Crop and Resize"
+    },
+    "Controlnet DepthXL": {
+        "txt2img_controlnet_ControlNet-0_controlnet_enable_checkbox": true,
+        "txt2img_controlnet_ControlNet-0_controlnet_pixel_perfect_checkbox": true,
+        "txt2img_controlnet_ControlNet-0_controlnet_preprocessor_preview_checkbox": true,
+        "txt2img_controlnet_ControlNet-0_controlnet_type_filter_radio": "Depth",
+        "txt2img_controlnet_ControlNet-0_controlnet_preprocessor_dropdown": "depth_midas",
+        "txt2img_controlnet_ControlNet-0_controlnet_model_dropdown": "diffusers_xl_depth_full [2f51180b]",
+        "txt2img_controlnet_ControlNet-0_controlnet_control_weight_slider": 0.5,
+        "txt2img_controlnet_ControlNet-0_controlnet_start_control_step_slider": 0,
+        "txt2img_controlnet_ControlNet-0_controlnet_ending_control_step_slider": 0.4,
+        "txt2img_controlnet_ControlNet-0_controlnet_control_mode_radio": "Balanced",
+        "txt2img_controlnet_ControlNet-0_controlnet_resize_mode_radio": "Crop and Resize"
+    },
+    "Controlnet OpenposeXL": {
+        "txt2img_controlnet_ControlNet-0_controlnet_enable_checkbox": true,
+        "txt2img_controlnet_ControlNet-0_controlnet_pixel_perfect_checkbox": true,
+        "txt2img_controlnet_ControlNet-0_controlnet_preprocessor_preview_checkbox": true,
+        "txt2img_controlnet_ControlNet-0_controlnet_type_filter_radio": "OpenPose",
+        "txt2img_controlnet_ControlNet-0_controlnet_preprocessor_dropdown": "dw_openpose_full",
+        "txt2img_controlnet_ControlNet-0_controlnet_model_dropdown": "thibaud_xl_openpose [c7b9cadd]",
+        "txt2img_controlnet_ControlNet-0_controlnet_control_weight_slider": 0.6,
+        "txt2img_controlnet_ControlNet-0_controlnet_start_control_step_slider": 0,
+        "txt2img_controlnet_ControlNet-0_controlnet_ending_control_step_slider": 0.6,
+        "txt2img_controlnet_ControlNet-0_controlnet_control_mode_radio": "Balanced",
+        "txt2img_controlnet_ControlNet-0_controlnet_resize_mode_radio": "Crop and Resize"
+    },
+    "Controlnet SoftEdgeXL": {
+        "txt2img_controlnet_ControlNet-0_controlnet_enable_checkbox": true,
+        "txt2img_controlnet_ControlNet-0_controlnet_pixel_perfect_checkbox": true,
+        "txt2img_controlnet_ControlNet-0_controlnet_preprocessor_preview_checkbox": true,
+        "txt2img_controlnet_ControlNet-0_controlnet_type_filter_radio": "SoftEdge",
+        "txt2img_controlnet_ControlNet-0_controlnet_preprocessor_dropdown": "softedge_pidinet",
+        "txt2img_controlnet_ControlNet-0_controlnet_model_dropdown": "sargezt_xl_softedge [b6f7415b]",
+        "txt2img_controlnet_ControlNet-0_controlnet_control_weight_slider": 0.4,
+        "txt2img_controlnet_ControlNet-0_controlnet_start_control_step_slider": 0,
+        "txt2img_controlnet_ControlNet-0_controlnet_ending_control_step_slider": 0.35,
+        "txt2img_controlnet_ControlNet-0_controlnet_control_mode_radio": "Balanced",
+        "txt2img_controlnet_ControlNet-0_controlnet_resize_mode_radio": "Crop and Resize"
+    }
+}

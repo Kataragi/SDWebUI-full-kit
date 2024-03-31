@@ -1,0 +1,3 @@
+2:3, 2/3      # portrait
+3:2, 3/2      # Land Scape
+16:9, 16/9    # Wallpaper
