@@ -35,3 +35,13 @@ On the way, you will be asked if you want to allow installation with git. After 
 
 The apps are executed by launching "02_webui_installer.bat".
 You can download recommended image-generating AI models and extensions with explanations with images.
+
+![スクリーンショット](./screenshot.png)
+
+各チェックボックスにチェックを入れると画像付きの説明を見ることができます。緑ボタンでインストールを開始することができます。
+
+Check each checkbox to see a description with images. You can start the installation with the green button.
+
+ダウンロードが終わったら完了ポップアップが出ます。次に青のボタンの起動を押すとWebUIを起動できます。初回は起動に時間がかかります。
+
+When the download is finished, a completion popup will appear. Next, you can press the blue button Launch to start WebUI. It will take some time to start up the first time.
