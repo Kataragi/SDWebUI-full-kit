@@ -28,7 +28,7 @@ When you git clone or unzip the file, you will see a folder structure like this.
 On the way, you will be asked if you want to allow installation with git. After that, the installation will continue on its own and the command prompt (black screen) will close.
 Next, run "02_request.bat". This one will finish installation immediately and close on its own.
 
-![インストールの実行](install.png)
+![インストールの実行](folder.png)
 
 アプリは「03_webui_installer.bat」を起動することで実行されます。
 おすすめの画像生成AIモデルや拡張機能を画像付きの説明を見ながらダウンロードできます。
