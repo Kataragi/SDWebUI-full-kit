@@ -21,16 +21,16 @@ The first step is to download the file. If you already have git installed, you c
 ![ダウンロード](download.png)
 
 git cloneまたは解凍するとこのようなフォルダー構成になっています。「01_python_and_git_installer.bat」を起動するとWebUIを実行するのに必要なアプリがダウンロードとインストールされます。(pythonとgit)
+途中、gitでインストールを許可するか聞かれますので「はい」とお答えください。そのあとは勝手にインストールが続行されコマンドプロンプト(黒い画面)は終了します。
+次に「02_request.bat」を起動してください。こちらはすぐインストールが終わり勝手に閉じます。
 
 When you git clone or unzip the file, you will see a folder structure like this. Run "01_python_and_git_installer.bat" to download and install the apps necessary to run WebUI. (python and git)
-
-途中、gitでインストールを許可するか聞かれますので「はい」とお答えください。そのあとは勝手にインストールが続行されコマンドプロンプト(黒い画面)は終了します。
-
 On the way, you will be asked if you want to allow installation with git. After that, the installation will continue on its own and the command prompt (black screen) will close.
+Next, run "02_request.bat". This one will finish installation immediately and close on its own.
 
 ![インストールの実行](install.png)
 
-アプリは「02_webui_installer.bat」を起動することで実行されます。
+アプリは「03_webui_installer.bat」を起動することで実行されます。
 おすすめの画像生成AIモデルや拡張機能を画像付きの説明を見ながらダウンロードできます。
 
 The apps are executed by launching "02_webui_installer.bat".
