@@ -1,4 +1,4 @@
-# SDWebUI-full-kit
+# SDWebUI-full-kit　オープンβ
 
 
 ## これは何ですか？ What is this?
