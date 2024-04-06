@@ -461,7 +461,7 @@ class MainWindow(QMainWindow):
         if self.checkbox2.isChecked():
             if not os.path.exists("animagine-xl-3.1.safetensors"):
                 print("animagine-xl-3.1.safetensorsをダウンロードします")
-                Ssubprocess.run(["curl", "-L", "https://huggingface.co/kataragi/AIGen/resolve/main/XLmodel/animagine-xl-3.1.safetensors", "-o", "animagine-xl-3.1.safetensors", "--progress-bar"], check=True)
+                subprocess.run(["curl", "-L", "https://huggingface.co/kataragi/AIGen/resolve/main/XLmodel/animagine-xl-3.1.safetensors", "-o", "animagine-xl-3.1.safetensors", "--progress-bar"], check=True)
             # 二階層上のディレクトリを取得
             current_dir = os.getcwd()
             parent_dir = os.path.dirname(current_dir)
@@ -491,7 +491,7 @@ class MainWindow(QMainWindow):
         if self.checkbox3.isChecked():
             if not os.path.exists("fuduki_mix_v20.safetensors"):
                 print("fuduki_mix_v2をダウンロードします")
-                subprocess.run(["curl", "-L", "https://huggingface.co/kataragi/AIGen/resolve/main/XLmodel/fuduki_mix_v20.safetensors", "-o", "fuduki_mix_v20.safetensors", "--progress-bar"], check=True)
+                .run(["curl", "-L", "https://huggingface.co/kataragi/AIGen/resolve/main/XLmodel/fuduki_mix_v20.safetensors", "-o", "fuduki_mix_v20.safetensors", "--progress-bar"], check=True)
             # 二階層上のディレクトリを取得
             current_dir = os.getcwd()
             parent_dir = os.path.dirname(current_dir)
@@ -521,7 +521,7 @@ class MainWindow(QMainWindow):
         if self.checkbox4.isChecked():
             if not os.path.exists("Juggernaut-XL_v9_RunDiffusionPhoto_v2.safetensors"):
                 print("Juggernaut-XL_v9をダウンロードします")
-                subprocess.run(["curl", "-L", "https://huggingface.co/kataragi/AIGen/resolve/main/XLmodel/Juggernaut-XL_v9_RunDiffusionPhoto_v2.safetensors", "-o", "Juggernaut-XL_v9_RunDiffusionPhoto_v2.safetensors", "--progress-bar"], check=True)
+                .run(["curl", "-L", "https://huggingface.co/kataragi/AIGen/resolve/main/XLmodel/Juggernaut-XL_v9_RunDiffusionPhoto_v2.safetensors", "-o", "Juggernaut-XL_v9_RunDiffusionPhoto_v2.safetensors", "--progress-bar"], check=True)
             # 二階層上のディレクトリを取得
             current_dir = os.getcwd()
             parent_dir = os.path.dirname(current_dir)
@@ -622,7 +622,7 @@ class MainWindow(QMainWindow):
         # リポジトリをダウンロード
         if self.checkbox_localization.isChecked():
             print("日本語化をダウンロードしています...")
-            if subprocess.call(["git", "clone", localization_repo]) != 0:
+            if .call(["git", "clone", localization_repo]) != 0:
                 print("日本語化は既にダウンロードされています。")
                 # 現在のディレクトリを取得
                 current_directory = os.getcwd()
@@ -654,17 +654,17 @@ class MainWindow(QMainWindow):
 
         if self.checkbox_tagcomplete.isChecked():
             print("予測変換機能をダウンロードしています...")
-            if subprocess.call(["git", "clone", tagcomplete_repo]) != 0:
+            if .call(["git", "clone", tagcomplete_repo]) != 0:
                 print("予測変換機能は既にダウンロードされています。")
 
         if self.checkbox_history.isChecked():
             print("プロンプト遡り機能をダウンロードしています...")
-            if subprocess.call(["git", "clone", history_slider_repo]) != 0:
+            if .call(["git", "clone", history_slider_repo]) != 0:
                 print("プロンプト遡り機能は既にダウンロードされています。")
 
         if self.checkbox_dialogue.isChecked():
             print("警告ダイアログをダウンロードしています...")
-            if subprocess.call(["git", "clone", Presets_repo]) != 0:
+            if .call(["git", "clone", Presets_repo]) != 0:
                 print("警告ダイアログは既にダウンロードされています。")
 
         if self.checkbox_ar.isChecked():
