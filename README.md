@@ -1,5 +1,9 @@
 # SDWebUI-full-kit　オープンβ
 
+## 24/04/18 Update！
+1111AUTOMATIC版もインストールできるようになりました！forge版で導入しているcheckpoint(モデル)やLoRA、embeddings、コントロールネットモデルを共有して起動することが可能です！　これにより容量を節約して複数のシステムを使い分けできるようになりました。今後はComfyUIも実装予定です。お楽しみに！
+
+1111AUTOMATIC version can now also be installed! It is possible to share and start checkpoints (models), LoRA, embeddings, and control net models installed in the FORGE version!　This saves space and allows you to use multiple systems. ComfyUI will be implemented in the future. Stay tuned!
 
 ## これは何ですか？ What is this?
 
