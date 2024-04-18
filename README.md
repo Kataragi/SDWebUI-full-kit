@@ -46,6 +46,10 @@ You can download recommended image-generating AI models and extensions with expl
 
 Check each checkbox to see a description with images. You can start the installation with the green button.
 
-ダウンロードが終わったら完了ポップアップが出ます。次に青のボタンの起動を押すとWebUIを起動できます。初回は起動に時間がかかります。
+ダウンロードが終わったら完了ポップアップが出ます。次に赤のボタンの起動を押すとWebUIを起動できます。初回は起動に時間がかかります。
 
 When the download is finished, a completion popup will appear. Next, you can press the blue button Launch to start WebUI. It will take some time to start up the first time.
+
+青いボタンを押すとシステムの更新ができます。新しいバージョンが出た場合ここからアップデートできます。
+
+Press the blue button to update the system. If a new version is released, you can update from here.
