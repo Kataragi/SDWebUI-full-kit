@@ -578,12 +578,12 @@ class MainWindow(QMainWindow):
         # tab3用のダウンロードボタンを作成します
         download_tab3_button = QPushButton("インストールを開始", self.tab3)
         download_tab3_button.setGeometry(50, base_y + (spacing * 17), 200, 40)
-        download_tab3_button.setStyleSheet("background-color: green; color: white; font-size: 16px;")
+        download_tab3_button.setStyleSheet("background-color: #00ba7c; color: white; font-size: 16px;")
 
         # tab3用の起動ボタンを作成します
         launch_tab3_button = QPushButton("起動", self.tab3)
         launch_tab3_button.setGeometry(255, base_y + (spacing * 17), 200, 40)
-        launch_tab3_button.setStyleSheet("background-color: blue; color: white; font-size: 16px;")
+        launch_tab3_button.setStyleSheet("background-color: #f91880; color: white; font-size: 16px;")
 
         # tab2用の更新ボタンを作成します
         git_pull_webui1111_tab3_button = QPushButton("更新", self.tab3)
