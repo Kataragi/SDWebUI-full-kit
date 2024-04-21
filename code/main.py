@@ -34,11 +34,15 @@ class MainWindow(QMainWindow):
         self.tab1 = QWidget()
         self.tab2 = QWidget()
         self.tab3 = QWidget()
+        self.tab4 = QWidget()
+        self.tab5 = QWidget()
 
         # タブのタイトルを設定します
         tab_widget.addTab(self.tab1, "モデルダウンロードとコントロールネット(forge)")
         tab_widget.addTab(self.tab2, "拡張機能(forge)")
-        tab_widget.addTab(self.tab3, "拡張機能(1111 AUTOMATIC)")
+        tab_widget.addTab(self.tab3, "1111版 AUTOMATIC)")
+        tab_widget.addTab(self.tab4, "ComfyUI")
+        tab_widget.addTab(self.tab5, "全体設定")
 
         # タブ1のレイアウトを設定します
         self.tab1_layout = QVBoxLayout(self.tab1)
@@ -49,19 +53,25 @@ class MainWindow(QMainWindow):
         # タブ3のレイアウトを設定します
         self.tab3_layout = QVBoxLayout(self.tab3)
         self.tab3.setLayout(self.tab3_layout)
+        # タブ3のレイアウトを設定します
+        self.tab4_layout = QVBoxLayout(self.tab3)
+        self.tab4.setLayout(self.tab3_layout)
+        # タブ3のレイアウトを設定します
+        self.tab5_layout = QVBoxLayout(self.tab3)
+        self.tab5.setLayout(self.tab3_layout)
 
         # checkpointのフォルダのパス
         os.chdir('..')
         folder_path = 'stable-diffusion-webui-forge/models/Stable-diffusion'
         # 確認したい特定の文字列
-        specific_string0 = 'hanamomopony'
+        specific_string0 = 'hanamomopony_v14'
         specific_string1 = 'momoiropony'
         specific_string2 = 'animagine-xl-3.1'
         specific_string3 = 'fuduki_mix'
         specific_string4 = 'Juggernaut-XL'
 
         # チェックボックスの初期ラベル
-        checkbox0_label = "hanamomopony_v12(6.46GB)"
+        checkbox0_label = "hanamomopony_v14(6.46GB)"
         checkbox1_label = "momoiropony_v1.4(6.46GB)"
         checkbox2_label = "animagine-xl-3.1(6.46GB)"
         checkbox3_label = "fuduki_mix_v2(6.46GB)"
@@ -147,7 +157,7 @@ class MainWindow(QMainWindow):
         self.title_label.setGeometry(50, base_y + (spacing * 0), 400, 30)  # ラベルの位置とサイズを設定します
         self.title_label.setStyleSheet("font-size: 18px; font-weight: bold;")
         
-        # hanamomopony_v12
+        # hanamomopony_v14
         self.checkbox0 = QCheckBox(checkbox0_label, self.tab1)
         self.checkbox0.setGeometry(50, base_y + (spacing * 1), 400, 30)
         self.checkbox0.setStyleSheet(label_style)
@@ -595,6 +605,27 @@ class MainWindow(QMainWindow):
         launch_tab3_button.clicked.connect(self.launch_webui1111)
         git_pull_webui1111_tab3_button.clicked.connect(self.git_pull_webui1111)
 
+# ここからタブ4
+        tab4base_y = 20
+        spacing = 35
+        # タイトルラベルを作成します
+        self.title_label = QLabel("ComfyUI", self.tab4)
+        self.title_label.setGeometry(50, tab3base_y, 400, 30)  # ラベルの位置とサイズを設定します
+        self.title_label.setStyleSheet("font-size: 18px; font-weight: bold;")
+
+# ここからタブ5
+        tab5base_y = 20
+        spacing = 35
+        # タイトルラベルを作成します
+        self.title_label = QLabel("全体設定", self.tab5)
+        self.title_label.setGeometry(50, tab3base_y, 400, 30)  # ラベルの位置とサイズを設定します
+        self.title_label.setStyleSheet("font-size: 18px; font-weight: bold;")
+
+
+
+
+
+
 # 画像の表示
         # image_labelの初期化
         self.image_label_tab1 = QLabel(self.tab1)
@@ -811,9 +842,9 @@ class MainWindow(QMainWindow):
         os.chdir("models\Stable-diffusion")
 
         if self.checkbox0.isChecked():
-            if not os.path.exists("hanamomopony_v12.safetensors"):
+            if not os.path.exists("hanamomopony_v14.safetensors"):
                 print("hanamomopony_v14をダウンロードします")
-                subprocess.run(["curl", "-L", "https://huggingface.co/kataragi/AIGen/resolve/main/XLmodel/hanamomopony_v14.safetensors", "-o", "hanamomopony_v12", "--progress-bar"], check=True)
+                subprocess.run(["curl", "-L", "https://huggingface.co/kataragi/AIGen/resolve/main/XLmodel/hanamomopony_v14.safetensors", "-o", "hanamomopony_v14.safetensors", "--progress-bar"], check=True)
             # 二階層上のディレクトリを取得
             current_dir = os.getcwd()
             parent_dir = os.path.dirname(current_dir)
@@ -821,7 +852,7 @@ class MainWindow(QMainWindow):
             # styles.csvファイルのパスを構築
             styles_path = os.path.join(grandparent_dir, "styles.csv")
             # 所定のテキスト
-            text_to_append = "hanamomopony_v12,\"score_9, score_8_up, score_7_up, source_anime, \",\"deformed anatomy, deformed fingers, realistic, source_furry, censored, @_@, heart-shaped pupils, abs, \""
+            text_to_append = "hanamomopony_v14,\"score_9, score_8_up, score_7_up, source_anime, \",\"deformed anatomy, deformed fingers, realistic, source_furry, censored, @_@, heart-shaped pupils, abs, \""
             try:
                 # styles.csvファイルを読み込む
                 with open(styles_path, "r", encoding="utf-8") as file:
@@ -1308,7 +1339,7 @@ class MainWindow(QMainWindow):
 
         os.chdir("models\Stable-diffusion")
         folder_path = os.getcwd()
-        specific_string0 = 'hanamomopony'
+        specific_string0 = 'hanamomopony_v14'
         specific_string1 = 'momoiropony'
         specific_string2 = 'animagine-xl-3.1'
         specific_string3 = 'fuduki_mix'
@@ -1320,7 +1351,7 @@ class MainWindow(QMainWindow):
             # 各ファイルについて特定の文字列が含まれているか確認し、ラベルを更新
             file_contains_string = any(specific_string0 in file for file in files)
             # 所定のテキスト
-            text_to_append = "hanamomopony_v12,\"score_9, score_8_up, score_7_up, source_anime, \",\"deformed anatomy, deformed fingers, realistic, source_furry, censored, @_@, heart-shaped pupils, abs, \""
+            text_to_append = "hanamomopony_v14,\"score_9, score_8_up, score_7_up, source_anime, \",\"deformed anatomy, deformed fingers, realistic, source_furry, censored, @_@, heart-shaped pupils, abs, \""
             try:
                 # styles.csvファイルを読み込む
                 with open(styles_path, "r", encoding="utf-8") as file:
